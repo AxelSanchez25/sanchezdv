@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: big;
+    src: url(fuentestx/Big_Shoulders_Stencil/BigShouldersStencil-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(fuentestx/Roboto/Roboto-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(fuentestx//Poppins/Poppins-Light.ttf);
+}
+
+body {
+    background-color: black;
+    font-family: Poppins;
+}
+
+.header {
+    position: fixed;
+    z-index: 4;
+}
+
+.nav-left img {
+    height: 0.7em;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 1em;
+    color: white;
+    background-color: #0000005e;
+
+}
+
+.nav-right li {
+    width: 5em;
+}
+
+.nav ul {
+    list-style: none;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    flex-direction: row;
+}
+
+.nav-right li {
+    width: 8em;
+    transition: all 0.3s ease;
+
+}
+
+.nav-right a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.5em;
+    font-family: roboto;
+    letter-spacing: 3px;
+
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: row;
+    width: 89em;
+
+}
+
+.nav-left li {
+    text-transform: capitalize;
+    font-family: big;
+    font-size: 2.5em;
+    letter-spacing: 3px;
+
+}
+
+.nav-right a:hover {
+    border-bottom: 2px solid #670089;
+    color: #670089;
+
+
+}
+
+.nav-right li:hover {
+    transform: translateY(-4px);
+}
+
+
+.bienvenida {
+    height: 60em;
+    width: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.bienvenida img {
+    height: 60em;
+    width: 100%;
+    filter: brightness(70%);
+}
+
+.Bien-btn {
+    position: absolute;
+    bottom: 5em;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 3em;
+    padding: 10px;
+    border: 2px solid #670089d3;
+    background-color: #670089;
+}
+
+.Bien-btn:hover {
+    background-color: #8300af;
+}
+
+.scroll-down {
+    position: absolute !important;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    animation: bounce 2s infinite;
+    z-index: 3;
+
+}
+
+/* animar el scroll-down*/
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    40% {
+        transform: translateX(-50%) translateY(-30px);
+    }
+
+    60% {
+        transform: translateX(-50%) translateY(-15px);
+    }
+}
+
+.pres {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2em;
+}
+
+.pres h4 {
+    color: white;
+    text-transform: uppercase;
+    line-height: 2em;
+    font-size: 1em;
+    letter-spacing: 6px;
+
+}
+
+.pres-logo strong {
+    color: white;
+    text-transform: capitalize;
+    font-size: 4em;
+    font-family: big;
+    letter-spacing: 5px;
+
+
+}
+
+.pres-logo img {
+    height: 5em;
+}
+
+.pres-logo {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+#carrusel {
+    position: relative;
+    width: 100%;
+    height: 40em;
+    /* Ajusta según tus necesidades */
+    overflow: hidden;
+}
+
+.carrusel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrusel-slide {
+    min-width: 100%;
+    height: 40em;
+
+}
+
+.carrusel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Esto hará que la imagen cubra todo el espacio disponible
+    El object-fit: cover asegurará que la imagen llene todo el espacio del slide sin
+     distorsionarse, recortando las partes que sobresalgan. Si prefieres ver la imagen 
+    completa y que se ajuste al contenedor, puedes usar object-fit: contain en su lugar. */
+    object-position: center above;
+    /* Centra la imagen */
+    filter: brightness(80%);
+
+}
+
+.carrusel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+.des-carrusel {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2em;
+}
+
+.de-carrusel p {
+    color: white;
+    font-size: 1.3em;
+    width: 50em;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+
+}
+
+.eje-left img {
+    height: 20em;
+}
