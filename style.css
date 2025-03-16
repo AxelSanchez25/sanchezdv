@@ -135,6 +135,7 @@ body {
     background-color: #8300af;
 }
 
+
 .scroll-down {
     position: absolute !important;
     bottom: 2rem;
@@ -275,6 +276,78 @@ body {
 
 }
 
-.eje-left img {
+.fondo-section{
+    background-image: url(img/_SAM1956.png);
+    filter: brightness(40%);
+    background-position: center; 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.eje-left {
     height: 20em;
+    width: auto;
+    color: white;
+    
+} 
+
+.prueba{
+    height: 20em;
+    width: auto;
+    background-color: white;
+}
+
+/*pagina sobre mi */
+
+.section-bienvenida2{
+    background-image: url(img/_SAM2228.jpg);
+    background-position:top;
+    background-size: cover;
+    filter: brightness(60%);
+
+}
+
+.bienvenida2{
+    display: flex;
+    align-items: right;
+    padding-left: 20em;
+    flex-direction: column;
+    height: 35em;
+    justify-content: center;
+
+}
+
+.bienvenida2 h4{
+    font-size: 3em;
+    color: white;
+    text-transform: capitalize;
+    font-family: roboto;
+    line-height: 1.4em;
+    letter-spacing: 3px;
+}
+
+.presentacion2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pres2{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.pres2 img{
+    height: 30em;
+    width: auto;
+    border-radius: 50%;
+    padding: 2em;
+    margin-left: 15em;
+}
+
+.pres2 p{
+    color: white;
+    width: 60em;
 }
