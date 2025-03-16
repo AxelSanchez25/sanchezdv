@@ -105,7 +105,7 @@ body {
 
 
 .bienvenida {
-    height: 60em;
+    height: 65em;
     width: auto;
     display: flex;
     align-items: center;
@@ -113,10 +113,10 @@ body {
     justify-items: center;
 }
 
-.bienvenida img {
-    height: 60em;
+.bienvenida video {
+    height: 70em;
     width: 100%;
-    filter: brightness(70%);
+    filter: brightness(50%);
 }
 
 .Bien-btn {
@@ -173,7 +173,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 2em;
+    margin-top: 5em;
 }
 
 .pres h4 {
@@ -305,6 +305,10 @@ body {
     background-position:top;
     background-size: cover;
     filter: brightness(60%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 
 }
 
@@ -315,7 +319,6 @@ body {
     flex-direction: column;
     height: 35em;
     justify-content: center;
-
 }
 
 .bienvenida2 h4{
@@ -351,3 +354,19 @@ body {
     color: white;
     width: 60em;
 }
+
+.fondo-section2{
+    background-image: url(img/_SAM2228.jpg);
+    filter: brightness(60%);
+    background-position: center; 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.eje-left2 {
+    height: 20em;
+    width: auto;
+    color: white;
+    
+} 
