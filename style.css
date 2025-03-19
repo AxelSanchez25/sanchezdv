@@ -113,7 +113,7 @@ body {
     justify-items: center;
 }
 
-.bienvenida video {
+.bienvenida img {
     height: 70em;
     width: 100%;
     filter: brightness(50%);
