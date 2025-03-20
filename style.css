@@ -19,8 +19,14 @@
 }
 
 body {
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.945);
     font-family: Poppins;
+}
+
+/*este es el fondo */
+canvas {
+    position: absolute;
+    z-index: -1;
 }
 
 .header {
@@ -31,6 +37,47 @@ body {
 .nav-left img {
     height: 0.7em;
 }
+
+.title-nav {
+	color:#3f005f;
+	font-size: 160px;
+	font-weight: bold;
+	overflow: hidden;
+	position: relative;
+	padding: 10px;
+	text-transform: uppercase;
+	animation: 4s ease infinite reverse glow;
+}
+.title-nav:before {
+	content: attr(data-text);
+	position: absolute;
+	mix-blend-mode: difference;
+	filter: blur(3px);
+}
+.title-nav:after {
+	content: "";
+    color: #923ef1;
+    color: #5500b6;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	mix-blend-mode: multiply;
+}
+
+@keyframes glow {
+	0% {
+		text-shadow: 0 0;
+	}
+	75% {
+		text-shadow: 0 0 16px;
+		filter: brightness(300%);
+	}
+}
+
+
+
 
 .nav {
     display: flex;
@@ -73,6 +120,7 @@ body {
     font-family: roboto;
     letter-spacing: 3px;
 
+
 }
 
 .nav-left {
@@ -93,19 +141,20 @@ body {
 }
 
 .nav-right a:hover {
-    border-bottom: 2px solid #670089;
-    color: #670089;
-
+    border-bottom: 2px solid rgb(121, 0, 202);
+    color: #923ef1;
+    transition: all 1s ease;
 
 }
 
 .nav-right li:hover {
     transform: translateY(-4px);
+   
 }
 
 
 .bienvenida {
-    height: 65em;
+    height: 75em;
     width: auto;
     display: flex;
     align-items: center;
@@ -114,26 +163,38 @@ body {
 }
 
 .bienvenida img {
-    height: 60em;
+    height: 100%;
     width: 100%;
     filter: brightness(50%);
+
 }
 
-.Bien-btn {
+
+.word { 
+    background-color: #5500b6;
     position: absolute;
     bottom: 5em;
-    text-align: center;
-    color: white;
-    text-transform: uppercase;
-    font-size: 3em;
-    padding: 10px;
-    border: 2px solid #670089d3;
-    background-color: #670089;
-}
+    font-family: roboto;
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    line-height: 1.4em;
+    height: 1.4em;
+    padding: 0 14px 0 7px;
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: capitalize;
+  }
+  
+  .word:before {
+    content: '';
+    background-color: rgb(253, 253, 253);
+    width: 1px;
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    right: 7px;
+  }
 
-.Bien-btn:hover {
-    background-color: #8300af;
-}
 
 
 .scroll-down {
@@ -237,6 +298,8 @@ body {
     object-position: center above;
     /* Centra la imagen */
     filter: brightness(80%);
+    overflow: hidden;
+
 
 }
 
@@ -276,23 +339,24 @@ body {
 
 }
 
-.fondo-section{
+.fondo-section {
     background-image: url(img/_SAM1956.png);
     filter: brightness(40%);
-    background-position: center; 
+    background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
 
 }
+
 .eje-left {
     height: 20em;
     width: auto;
     color: white;
-    
-} 
 
-.prueba{
+}
+
+.prueba {
     height: 20em;
     width: auto;
     background-color: white;
@@ -300,9 +364,9 @@ body {
 
 /*pagina sobre mi */
 
-.section-bienvenida2{
+.section-bienvenida2 {
     background-image: url(img/_SAM2228.jpg);
-    background-position:top;
+    background-position: top;
     background-size: cover;
     filter: brightness(60%);
     background-attachment: fixed;
@@ -312,7 +376,7 @@ body {
 
 }
 
-.bienvenida2{
+.bienvenida2 {
     display: flex;
     align-items: right;
     padding-left: 20em;
@@ -321,7 +385,7 @@ body {
     justify-content: center;
 }
 
-.bienvenida2 h4{
+.bienvenida2 h4 {
     font-size: 3em;
     color: white;
     text-transform: capitalize;
@@ -330,43 +394,44 @@ body {
     letter-spacing: 3px;
 }
 
-.presentacion2{
+.presentacion2 {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.pres2{
+.pres2 {
     display: flex;
     align-items: center;
     flex-direction: row;
 }
 
-.pres2 img{
+.pres2 img {
     height: 30em;
     width: auto;
-    border-radius: 50%;
     padding: 2em;
     margin-left: 15em;
+    opacity: 50%;
 }
 
-.pres2 p{
+.pres2 p {
     color: white;
     width: 60em;
 }
 
-.fondo-section2{
+.fondo-section2 {
     background-image: url(img/_SAM2228.jpg);
     filter: brightness(60%);
-    background-position: center; 
+    background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
 
 }
+
 .eje-left2 {
     height: 20em;
     width: auto;
     color: white;
-    
-} 
+
+}
