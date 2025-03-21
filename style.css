@@ -21,6 +21,7 @@
 body {
     background-color: rgba(0, 0, 0, 0.945);
     font-family: Poppins;
+    color: white;
 }
 
 /*este es el fondo */
@@ -56,7 +57,7 @@ canvas {
 }
 .title-nav:after {
 	content: "";
-    color: #923ef1;
+    color: rgb(146, 62, 241);
     color: #5500b6;
 	position: absolute;
 	left: 0;
@@ -166,12 +167,13 @@ canvas {
     height: 100%;
     width: 100%;
     filter: brightness(50%);
+  
 
 }
 
 
 .word { 
-    background-color: #5500b6;
+    border-bottom: 4px solid #5500b6;
     position: absolute;
     bottom: 5em;
     font-family: roboto;
@@ -234,7 +236,7 @@ canvas {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 5em;
+    margin: 8em;
 }
 
 .pres h4 {
@@ -249,9 +251,9 @@ canvas {
 .pres-logo strong {
     color: white;
     text-transform: capitalize;
-    font-size: 4em;
+    font-size: 5em;
     font-family: big;
-    letter-spacing: 5px;
+    letter-spacing: 10px;
 
 
 }
@@ -274,6 +276,7 @@ canvas {
     height: 40em;
     /* Ajusta según tus necesidades */
     overflow: hidden;
+    z-index: 1;
 }
 
 .carrusel-container {
@@ -300,10 +303,9 @@ canvas {
     filter: brightness(80%);
     overflow: hidden;
 
-
 }
 
-.carrusel-button {
+/* .carrusel-button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -312,6 +314,7 @@ canvas {
     border: none;
     padding: 10px;
     cursor: pointer;
+    z-index: 2;
 }
 
 .prev {
@@ -320,14 +323,14 @@ canvas {
 
 .next {
     right: 10px;
-}
+} */
 
 
 .des-carrusel {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 2em;
+    margin: 10em;
 }
 
 .de-carrusel p {
@@ -352,14 +355,8 @@ canvas {
 .eje-left {
     height: 20em;
     width: auto;
-    color: white;
+  
 
-}
-
-.prueba {
-    height: 20em;
-    width: auto;
-    background-color: white;
 }
 
 /*pagina sobre mi */
@@ -434,4 +431,18 @@ canvas {
     width: auto;
     color: white;
 
+}
+
+/*foooter*/
+.footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(0, 0, 0);
+}
+
+.footer1{
+    height: 5em;
+    display: flex;
+    align-items: center;
 }

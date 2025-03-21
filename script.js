@@ -12,11 +12,11 @@ function showSlide(index) {
   currentIndex = index;
 }
 
-prevButton.addEventListener('click', () => showSlide(currentIndex - 1));
-nextButton.addEventListener('click', () => showSlide(currentIndex + 1));
+// prevButton.addEventListener('click', () => showSlide(currentIndex - 1));
+// nextButton.addEventListener('click', () => showSlide(currentIndex + 1));
 
 // Cambio automático cada 5 segundos
-setInterval(() => showSlide(currentIndex + 1), 5000);
+setInterval(() => showSlide(currentIndex + 1), 7000);
 
 
 ///////fondo de luz 
@@ -25,7 +25,7 @@ const turnRatio = 0.1;   //how much the lines turns
 const bc = '121, 0, 202' //RGB line color
 const speed = 60;       //the line moving speed
 const lineWidth = 1;
-const backgroundColor = 'rgb(0, 0, 0)';
+const backgroundColor = 'rgba(0, 0, 0, 0.31)';
 //-------------------------------------------
 
 
@@ -165,7 +165,7 @@ class RunningLine {
 window.onload = screenInit
 
 //////////////////////prueba tex 
-var words = ['bienvenido', 'a', 'mi', 'web'],
+var words = ['hola','bienvenido', 'a', 'mi', 'web'],
     wordWrapper = document.getElementById('word'),
     wordWrapperContent = wordWrapper.innerHTML,
     addingWord = false,
